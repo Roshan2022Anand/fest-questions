@@ -162,3 +162,29 @@ footer {
         width: 100%;
     }
 }
+
+/* mouse animation */
+.cursor-dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+/* Hollow circle that trails behind */
+.cursor-circle {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    /* spring effect */
+    transition: all 150ms ease-out;
+}

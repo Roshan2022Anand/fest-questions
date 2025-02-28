@@ -3,6 +3,8 @@ const userName = document.getElementById('username');
 const passwordELe = document.getElementById('password');
 const emailEle = document.getElementById('email');
 const showPasswordBtn = document.getElementById('showPassword');
+const cursorDot = document.getElementById('cursorDot');
+const cursorCircle = document.getElementById('cursorCircle');
 
 //funtion to show password
 showPasswordBtn.addEventListener('click', () => {
@@ -69,3 +71,20 @@ const submitForm = () => {
     emailEle.value = '';
     showPasswordBtn.innerText = 'Show';
 }
+
+
+// Mouse coordinates
+let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+
+let circleX = mouseX, circleY = mouseY;
+
+// Update dot position immediately when mouse moves
+document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursorDot.style.left = mouseX + 'px';
+    cursorDot.style.top = mouseY + 'px';
+    cursorCircle.style.left = mouseX + 'px';
+    cursorCircle.style.top = mouseY + 'px';
+
+});
