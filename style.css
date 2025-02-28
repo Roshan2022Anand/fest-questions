@@ -15,6 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 10px;
+    cursor: none;
 }
 
 h1 {
@@ -165,26 +166,29 @@ footer {
 
 /* mouse animation */
 .cursor-dot {
-    position: fixed;
     width: 8px;
     height: 8px;
     background: #fff;
     border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 100;
+    transition: all 150ms ease-out;
 }
 
-/* Hollow circle that trails behind */
 .cursor-circle {
-    position: fixed;
     width: 32px;
     height: 32px;
     border: 2px solid #fff;
     border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: -10%;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 100;
-    /* spring effect */
-    transition: all 150ms ease-out;
+    transition: all 350ms ease-out;
 }

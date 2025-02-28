@@ -1,3 +1,4 @@
+const form = document.getElementById('loginForm');
 const container = document.getElementById('toast-container');
 const userName = document.getElementById('username');
 const passwordELe = document.getElementById('password');
@@ -72,12 +73,6 @@ const submitForm = () => {
     showPasswordBtn.innerText = 'Show';
 }
 
-
-// Mouse coordinates
-let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
-
-let circleX = mouseX, circleY = mouseY;
-
 // Update dot position immediately when mouse moves
 document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
@@ -86,5 +81,18 @@ document.addEventListener('mousemove', (e) => {
     cursorDot.style.top = mouseY + 'px';
     cursorCircle.style.left = mouseX + 'px';
     cursorCircle.style.top = mouseY + 'px';
-
 });
+
+//diable mouse follower when entering the form
+form.addEventListener('mouseenter', (e) => {
+    cursorDot.style.display = 'none';
+    document.body.style.cursor = 'pointer';
+    cursorCircle.style.display = 'none';
+})
+
+//enable mouse follower when leaving the form
+form.addEventListener('mouseleave', (e) => {
+    cursorDot.style.display = 'block';
+    document.body.style.cursor = 'none';
+    cursorCircle.style.display = 'block';
+})
