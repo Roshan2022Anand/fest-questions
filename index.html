@@ -2,36 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- question 1 -->
-  <!-- <div class="one">
-    <div class="two"></div>
-  </div> -->
-
-
-  <!-- question 2 -->
-  <!-- <div class="one"></div> -->
-
-
-  <!-- question 3 -->
-  <!-- <div class="one">
-        <div class="two"></div>
-        <div class="two"></div>
-        <div class="odd"></div>
-        <div class="two"></div>
-        <div class="two"></div>
-     </div> -->
-
-
-  <!-- question 4 -->
-  <!-- <div class="one"></div> -->
+    <main>
+        <form id="loginForm">
+            <h3>Signup</h3>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required />
+            <label for="password">Password</label>
+            <div id="passwordContainer">
+                <input type="password" id="password" name="password" placeholder="Enter password" />
+                <button type="button" id="showPassword">Show</button>
+            </div>
+            <button type="button" onclick="submitForm()">Sign In</button>
+        </form>
+        <footer>
+            &copy; 2025 alva's fest
+        </footer>
+    </main>
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
