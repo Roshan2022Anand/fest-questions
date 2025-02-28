@@ -190,5 +190,5 @@ footer {
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 100;
-    transition: all 350ms ease-out;
+    transition: all 250ms ease-out;
 }
