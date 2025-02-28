@@ -76,15 +76,24 @@ input {
     border-radius: 4px;
     color: #e0e0e0;
     outline: none;
+
+}
+
+form>input:focus {
+    border: 1px solid #6200ee;
 }
 
 #passwordContainer {
     background: #2c2c2c;
     border-radius: 4px;
     display: flex;
+
+    &:focus-within {
+        border: 1px solid #6200ee;
+    }
 }
 
-#showPassword{
+#showPassword {
     background-color: transparent;
     padding-right: 5px;
 }
@@ -132,6 +141,7 @@ footer {
     left: 0;
 }
 
+/* animation for toast  */
 @keyframes fadeIn {
     from {
         transform: translateX(100px);
@@ -142,6 +152,7 @@ footer {
     }
 }
 
+/* animation for loading bar */
 @keyframes loading {
     from {
         width: 0%;
