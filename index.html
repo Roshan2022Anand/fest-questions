@@ -11,23 +11,26 @@
 <body>
     <main>
         <!-- Signup form -->
-        <form id="loginForm">
+        <form id="signup-form">
             <h3>Signup</h3>
-            <hr/>
-            <label for="username">Username :</label>
-            <input type="text" id="username" name="username" placeholder="Enter username" />
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" placeholder="Enter email" required />
-            <label for="password">Password :</label>
-            <div id="passwordContainer">
-                <input type="password" id="password" name="password" placeholder="Enter password" />
+            <hr />
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" />
+            <label for="password">Password</label>
+            <section id="passwordContainer">
+                <input type="password" id="password" placeholder="Enter password" />
                 <button type="button" id="showPassword">Show</button>
-            </div>
-            <hr/>
+            </section>
+            <hr />
             <button type="button" onclick="submitForm()">Sign In</button>
+            <h6>already have an account ?<a href="#.com">Login</a></h6>
         </form>
         <footer>
-            &copy; 2025 alva's fest
+            <p>
+                &copy; 2025 alva's fest
+            </p>
         </footer>
     </main>
     <!-- toast container -->

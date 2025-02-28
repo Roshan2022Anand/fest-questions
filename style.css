@@ -28,9 +28,21 @@ h3 {
     font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
 }
 
+
 p {
     font-size: clamp(1rem, 0.8rem + 0.5vw, 1.25rem);
     max-width: 65ch;
+}
+
+h6 {
+    font-size: clamp(0.75rem, 0.5rem + 0.5vw, 1rem);
+    margin-left: auto;
+
+    &>a {
+        margin-left: 3px;
+        color: #6200ee;
+        text-decoration: none;
+    }
 }
 
 button {
